@@ -1,0 +1,100 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.example.a02225076067_ilker_yilmaz.snowfall.SnowfallView
+        android:id="@+id/snowfallView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor" />
+    <!-- Instagram Logo -->
+
+    <!-- Kullanıcı Adı Girişi -->
+
+    <!-- Şifre Girişi -->
+
+    <!-- Giriş Yap Butonu -->
+
+    <!-- Kayıt Ol -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginBottom="67dp"
+            android:src="@drawable/muklogo"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/kullaniciEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Telefon numarası, kullanıcı adı veya e-posta"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/kullaniciSifresi"
+            app:layout_constraintEnd_toEndOf="@+id/kullaniciSifresi"
+            app:layout_constraintStart_toStartOf="@+id/kullaniciSifresi"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <EditText
+            android:id="@+id/kullaniciSifresi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="47dp"
+            android:background="@drawable/rounded_edit_text"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/butonGiris"
+            app:layout_constraintEnd_toEndOf="@+id/butonGiris"
+            app:layout_constraintStart_toStartOf="@+id/butonGiris"
+            app:layout_constraintTop_toBottomOf="@+id/kullaniciEmail" />
+
+        <Button
+            android:id="@+id/butonGiris"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/blue"
+            android:text="Giriş Yap"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/butonKayit"
+            app:layout_constraintEnd_toEndOf="@+id/butonKayit"
+            app:layout_constraintStart_toStartOf="@+id/butonKayit"
+            app:layout_constraintTop_toBottomOf="@+id/kullaniciSifresi" />
+
+        <TextView
+            android:id="@+id/butonKayit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="129dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Hesabın yok mu? Kaydol"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butonGiris" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

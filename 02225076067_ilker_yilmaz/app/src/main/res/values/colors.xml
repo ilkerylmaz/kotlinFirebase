@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="secondPageColor">#C5A797</color>
+    <color name="toolbarColor">#FBFEFB</color>
+    <color name="tenregiAcik">#F3D8C7</color>
+    <color name="gray">#A9A9A9</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="blue">#3797EF</color>
+
+    <!-- Bilim ve Teknoloji Temalı Renkler -->
+    <color name="primaryColor">#1E88E5</color> <!-- Parlak mavi -->
+    <color name="secondaryColor">#42A5F5</color> <!-- Açık mavi -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Hafif açık gri -->
+    <color name="textColorPrimary">#212121</color> <!-- Siyah tonlu metin -->
+    <color name="textColorSecondary">#757575</color> <!-- Hafif gri metin -->
+    <color name="accentColor">#FFC107</color> <!-- Sıcak sarı -->
+
+
+</resources>

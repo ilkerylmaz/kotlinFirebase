@@ -1,0 +1,149 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Bilim İnsanı Resmi -->
+        <ImageView
+            android:id="@+id/ivPostImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:src="@drawable/uploadpage"
+            android:contentDescription="Gönderi Resmi"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_image_background" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C32727"
+            android:text="email"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- İsim ve Soyisim -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_semibold_italic"
+                android:text="Ad"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/tvSurname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_semibold_italic"
+                android:text="Soyad"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Doğum ve Ölüm Tarihleri -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvBirthView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_semibold_italic"
+                android:text="12/02/1290"
+                android:textSize="19sp"
+                android:textColor="#757575" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text=" - "
+                android:textColor="#757575" />
+
+            <TextView
+                android:id="@+id/tvDeathView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_semibold_italic"
+                android:text="12/02/1350"
+                android:textSize="19sp"
+                android:textColor="#757575" />
+        </LinearLayout>
+
+        <!-- Doğum Yeri -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doğum Yeri:"
+                android:textColor="#616161"
+                android:textSize="16sp"
+                android:fontFamily="@font/adamina"
+                android:layout_marginEnd="4dp" />
+
+            <TextView
+                android:id="@+id/tvDogumYeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="Şehir"
+                android:textColor="#222222"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Bilime Katkılar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Bilime Katkıları:"
+            android:textColor="#616161"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lora_semibold_italic"
+            />
+
+        <TextView
+            android:id="@+id/tvContribution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Bilime Katkıları"
+            android:fontFamily="@font/adamina"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

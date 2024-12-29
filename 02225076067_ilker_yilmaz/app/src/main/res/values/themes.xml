@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme._02225076067_ilker_yilmaz" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/secondaryColor</item>
+        <item name="colorSecondary">@color/accentColor</item>
+
+        <!-- Metin Renkleri -->
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textColorHint">@color/textColorSecondary</item>
+
+        <!-- Toolbar Teması -->
+
+    </style>
+
+    <style name="Theme._02225076067_ilker_yilmaz" parent="Base.Theme._02225076067_ilker_yilmaz" >
+        <item name="android:popupBackground">#FF5722</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="CustomTheme" parent="Theme.AppCompat.Light"/>
+</resources>

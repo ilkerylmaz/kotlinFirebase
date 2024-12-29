@@ -1,0 +1,88 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Resim Seçim Alanı -->
+        <ImageView
+            android:id="@+id/ivSelectedImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:contentDescription="Seçilen Resim"
+            android:src="@drawable/uploadpage"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Ad -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ad"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp" />
+
+        <!-- Soyad -->
+        <EditText
+            android:id="@+id/etSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Soyad"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp" />
+
+        <!-- Doğduğu Yer -->
+        <EditText
+            android:id="@+id/etBirthplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doğduğu Yer"
+            android:inputType="text"
+            android:layout_marginTop="16dp" />
+
+        <!-- Doğum Tarihi -->
+        <EditText
+            android:id="@+id/etBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doğum Tarihi"
+            android:inputType="date"
+            android:layout_marginTop="16dp" />
+
+        <!-- Ölüm Tarihi -->
+        <EditText
+            android:id="@+id/etDeathDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ölüm Tarihi"
+            android:inputType="date"
+            android:layout_marginTop="16dp" />
+
+        <!-- Bilime Katkıları -->
+        <EditText
+            android:id="@+id/etContribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bilime Katkıları"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="16dp"
+            android:minHeight="100dp" />
+
+        <!-- Gönder Butonu -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gönder"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
