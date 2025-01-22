@@ -1,2 +1,2 @@
 # KotlinFirebase_project
- instagram klon
+ instagram clon
